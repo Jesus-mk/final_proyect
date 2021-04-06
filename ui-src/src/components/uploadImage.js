@@ -17,7 +17,7 @@ function FileUploadPage({id, count, setCount, disable, setDisable}){
         const formData = new FormData();
         formData.append('filename', selectedFile);
 		
-		fetch(`http://localhost:3000/employee/upload/?id=${id}`,{
+		fetch(`https://hidden-sands-57810.herokuapp.com/employee/upload/?id=${id}`,{
 				method: 'POST',
 				body: formData,
             })

@@ -1,13 +1,13 @@
 
 
-const API_URL = "http://localhost:3000/login";
+const API_URL = "https://hidden-sands-57810.herokuapp.com/login";
 
 
 class CompanyService {
   
   getCompany(CIF, token) {
     
-    return fetch(`http://localhost:3000/companies?from=0&limit=10&CIF=${CIF}`, {
+    return fetch(`https://hidden-sands-57810.herokuapp.com/companies?from=0&limit=10&CIF=${CIF}`, {
       method: "GET",
       Cors: "CORS",
       headers: {
@@ -28,7 +28,7 @@ class CompanyService {
 
   getCompanies(companyName, CIF, activity, city, expired, token, page) {
     page = page * 10;
-    return fetch(`http://localhost:3000/companies?from=${page}&limit=11&companyName=${companyName}&CIF=${CIF}&activity=${activity}&city=${city}&expired=${expired}`, {
+    return fetch(`https://hidden-sands-57810.herokuapp.com/companies?from=${page}&limit=11&companyName=${companyName}&CIF=${CIF}&activity=${activity}&city=${city}&expired=${expired}`, {
       method: "GET",
       Cors: "CORS",
       headers: {
@@ -49,7 +49,7 @@ class CompanyService {
 
   getSubCompanies(parentCompany_CIF, companyName, CIF, activity, city, expired, token, page) {
     page = page * 10;
-    return fetch(`http://localhost:3000/companies/sub?from=${page}&limit=11&parentCompany_CIF=${parentCompany_CIF}&companyName=${companyName}&activity=${activity}&CIF=${CIF}&city=${city}&expired=${expired}`, {
+    return fetch(`https://hidden-sands-57810.herokuapp.com/companies/sub?from=${page}&limit=11&parentCompany_CIF=${parentCompany_CIF}&companyName=${companyName}&activity=${activity}&CIF=${CIF}&city=${city}&expired=${expired}`, {
       method: "GET",
       Cors: "CORS",
       headers: {
@@ -81,7 +81,7 @@ class CompanyService {
       adress: adress,
       parentCompany_CIF: parentCompany_CIF,
     }
-    return fetch("http://localhost:3000/companies", {
+    return fetch("https://hidden-sands-57810.herokuapp.com/companies", {
       method: "POST",
       Cors: "CORS",
       headers: {
@@ -114,7 +114,7 @@ class CompanyService {
       adress: adress,
     }
     
-    return fetch("http://localhost:3000/companies/?_id="+id, {
+    return fetch("https://hidden-sands-57810.herokuapp.com/companies/?_id="+id, {
       method: "PUT",
       Cors: "CORS",
       headers: {
@@ -141,7 +141,7 @@ class CompanyService {
     let credentials = {
       parentCompany_CIF: parentCompany_CIF
     }
-    return fetch(`http://localhost:3000/companies/sub?CIF=${CIF}`, {
+    return fetch(`https://hidden-sands-57810.herokuapp.com/companies/sub?CIF=${CIF}`, {
       method: "PUT",
       Cors: "CORS",
       headers: {
@@ -169,7 +169,7 @@ class CompanyService {
     
     e.preventDefault();
 
-    return fetch("http://localhost:3000/companies/All?_id="+id, {
+    return fetch("https://hidden-sands-57810.herokuapp.com/companies/All?_id="+id, {
       method: "DELETE",
       Cors: "CORS",
       headers: {
@@ -196,7 +196,7 @@ class CompanyService {
     let credentials = {
       parentCompany_CIF: parentCompany_CIF
     }
-    return fetch("http://localhost:3000/companies/removeSub/?_id="+id, {
+    return fetch("https://hidden-sands-57810.herokuapp.com/companies/removeSub/?_id="+id, {
       method: "DELETE",
       Cors: "CORS",
       headers: {

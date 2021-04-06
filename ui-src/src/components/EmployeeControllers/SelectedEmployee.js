@@ -92,7 +92,7 @@ function SelectedEmployee({selectedUser, setSelectedUser,
   const [MessageError, setMessageError] = useState();
   
   let url;
-  if (selectedUser._id !== undefined) url = `http://localhost:3000/employee/image/?id=${selectedUser.profilePicture}`
+  if (selectedUser._id !== undefined) url = `https://hidden-sands-57810.herokuapp.com/employee/image/?id=${selectedUser.profilePicture}`
   const delay = ms => new Promise(res => setTimeout(res, ms));
  
 return (

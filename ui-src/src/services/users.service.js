@@ -2,7 +2,7 @@
 import EventEmitter from "eventemitter3";
 
  
-const API_URL = "http://localhost:3000/login";
+const API_URL = "https://hidden-sands-57810.herokuapp.com/login";
 
 
 class UsersService {
@@ -12,7 +12,7 @@ class UsersService {
   }
     getUsers(username, email, CIF, role, token, page) {
       page = page * 10;
-      return fetch(`http://localhost:3000/user?from=${page}&limit=11&username=${username}&CIF=${CIF}&email=${email}&role=${role}`, {
+      return fetch(`https://hidden-sands-57810.herokuapp.com/user?from=${page}&limit=11&username=${username}&CIF=${CIF}&email=${email}&role=${role}`, {
       method: "GET",
       Cors: "CORS",
       headers: {
@@ -40,7 +40,7 @@ class UsersService {
         role: role,
       }
 
-      return fetch("http://localhost:3000/user/?_id="+id, {
+      return fetch("https://hidden-sands-57810.herokuapp.com/user/?_id="+id, {
         method: "PUT",
         Cors: "CORS",
         headers: {
@@ -73,7 +73,7 @@ class UsersService {
       }
 
 
-      return fetch("http://localhost:3000/user", {
+      return fetch("https://hidden-sands-57810.herokuapp.com/user", {
         method: "POST",
         Cors: "CORS",
         headers: {
@@ -114,7 +114,7 @@ class UsersService {
         parentCompany_CIF: parentCompany_CIF,
       }
 
-      return fetch("http://localhost:3000/user?newCompany=true", {
+      return fetch("https://hidden-sands-57810.herokuapp.com/user?newCompany=true", {
         method: "POST",
         Cors: "CORS",
         headers: {
@@ -140,7 +140,7 @@ class UsersService {
       e.preventDefault();
       
     
-      return fetch("http://localhost:3000/user?_id="+id, {
+      return fetch("https://hidden-sands-57810.herokuapp.com/user?_id="+id, {
         method: "DELETE",
         Cors: "CORS",
         headers: {

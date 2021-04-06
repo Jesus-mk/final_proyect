@@ -1,5 +1,5 @@
 import EventEmitter from "eventemitter3";
-const API_URL = "http://localhost:3000/login";
+const API_URL = "https://hidden-sands-57810.herokuapp.com/login";
 
 
 class AuthService {
@@ -18,7 +18,7 @@ class AuthService {
           password: password,
         }
         
-        return fetch(`http://localhost:3000/login`, {
+        return fetch(`https://hidden-sands-57810.herokuapp.com/login`, {
           method: "POST",
           Cors: "CORS",
           headers: {
@@ -63,7 +63,7 @@ class AuthService {
         username: username,
         email: email,
       }
-      return fetch("http://localhost:3000/user/?_id="+id, {
+      return fetch("https://hidden-sands-57810.herokuapp.com/user/?_id="+id, {
         method: "PUT",
         Cors: "CORS",
         headers: {

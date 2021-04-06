@@ -119,7 +119,7 @@ function Login() {
             },
             body: JSON.stringify({credentials})
           };
-          const request = new Request('http://localhost:3000/login', config);
+          const request = new Request('https://hidden-sands-57810.herokuapp.com/login', config);
           fetch(request)
           .then( response => response.json()
           .then(

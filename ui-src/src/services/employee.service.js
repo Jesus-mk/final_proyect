@@ -2,7 +2,7 @@
 import EventEmitter from "eventemitter3";
 
  
-const API_URL = "http://localhost:3000/login";
+const API_URL = "https://hidden-sands-57810.herokuapp.com/login";
 
 
 class EmployeeService {
@@ -12,7 +12,7 @@ class EmployeeService {
   }
     getEmployees(DNI, name, secondName, job, expired, CIF, token, page) {
       page = page * 10;
-      return fetch(`http://localhost:3000/employee?from=${page}&limit=11&DNI=${DNI}&name=${name}&firstLastName=${secondName}&job=${job}&expired=${expired}&CIF=${CIF}`, {
+      return fetch(`https://hidden-sands-57810.herokuapp.com/employee?from=${page}&limit=11&DNI=${DNI}&name=${name}&firstLastName=${secondName}&job=${job}&expired=${expired}&CIF=${CIF}`, {
       method: "GET",
       Cors: "CORS",
       headers: {
@@ -45,7 +45,7 @@ class EmployeeService {
       }
 
 
-      return fetch("http://localhost:3000/employee/?_id="+selectedUser._id, {
+      return fetch("https://hidden-sands-57810.herokuapp.com/employee/?_id="+selectedUser._id, {
         method: "PUT",
         Cors: "CORS",
         headers: {
@@ -81,7 +81,7 @@ class EmployeeService {
       }
 
 
-      return fetch("http://localhost:3000/employee", {
+      return fetch("https://hidden-sands-57810.herokuapp.com/employee", {
         method: "POST",
         Cors: "CORS",
         headers: {
@@ -106,7 +106,7 @@ class EmployeeService {
         
       e.preventDefault();
       
-      return fetch("http://localhost:3000/employee?_id="+id, {
+      return fetch("https://hidden-sands-57810.herokuapp.com/employee?_id="+id, {
         method: "DELETE",
         Cors: "CORS",
         headers: {
@@ -135,7 +135,7 @@ class EmployeeService {
       }
 
 
-      return fetch("http://localhost:3000/employee/upload/", {
+      return fetch("https://hidden-sands-57810.herokuapp.com/employee/upload/", {
         method: "POST",
         Cors: "CORS",
         headers: {

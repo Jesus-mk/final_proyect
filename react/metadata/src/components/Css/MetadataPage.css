@@ -1,0 +1,8 @@
+div.MetadataPageComponent {
+    height: 100%;
+}
+div.MetadataPageComponent div.mainBody {
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+}

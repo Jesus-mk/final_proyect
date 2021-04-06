@@ -1,0 +1,14 @@
+div.MainController {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100%;
+}
+
+div.MainController a{
+    text-decoration: none; 
+    width: 20%;
+    margin: 2%;
+}

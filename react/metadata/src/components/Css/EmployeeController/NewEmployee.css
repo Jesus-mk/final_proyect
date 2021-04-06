@@ -1,0 +1,133 @@
+div.NewEmployeeComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 5%;
+    -webkit-animation: slit-in-vertical 0.45s ease-out both;
+	        animation: slit-in-vertical 0.45s ease-out both;
+}
+
+div.NewEmployeeComponent h3{ 
+    margin: 0;
+    position: relative;
+    top: 5px;
+    
+    background-color: var(--white-0);
+    padding: 5px 20px 0px 20px;
+    border: 1px solid var(--white-8);
+    border-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+div.NewEmployeeComponent p {
+    margin: 0;
+}
+
+div.NewEmployeeComponent div.ProfileCard{
+    background-color: var(--white-0);
+    border: 1px solid var(--white-8);
+    border-radius: 0px 0px 15px 15px;
+    -webkit-box-shadow: 5px 0px 15px 5px rgba(0,0,0,0.3); 
+    box-shadow: 5px 0px 15px 0px rgba(0,0,0,0.3);
+    padding: 2%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    width: 90%;
+}
+div.NewEmployeeComponent form, table {
+    width: 100%;
+}
+
+div.NewEmployeeComponent table.companyTable {
+    margin-top: 5%;
+}
+
+
+div.NewEmployeeComponent button {
+    height: 30px;
+    appearance: none;
+    background-color:var(--white-0);
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    min-width: 30%;
+}
+
+div.NewEmployeeComponent button:hover {
+    background-color:var(--white-1);
+}
+
+div.NewEmployeeComponent button[disabled]{
+    visibility: hidden;
+    display: none;
+}
+div.NewEmployeeComponent button {
+    appearance:none;
+    font-weight:600;
+    background-color:var(--white-0);
+}
+
+div.NewEmployeeComponent button[type="submit"]{
+    background-color:var(--yellow-6);
+    border: solid 1px var(--white-6);
+    color:#fff; 
+    width: 40%;  
+}
+
+div.NewEmployeeComponent button[type="submit"]:hover {
+    background-color:var(--yellow-5);
+}
+
+div.NewEmployeeComponent input.inputText {
+    text-align: center;
+    box-shadow: 0px 10px 5px -12px black;
+    
+    border: 0;
+    outline: 0;
+    background: transparent;
+    
+    height:30px;   
+    width: 100%;
+    margin-top: 5px;
+}
+
+div.NewEmployeeComponent input.inputText:enabled{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+div.NewEmployeeComponent input.inputText:enabled:hover {
+    border: solid 1px var(--white-3);
+}
+div.NewEmployeeComponent input.inputText:enabled:focus {
+    border: solid 1px var(--white-4);
+}
+
+
+div.NewEmployeeComponent select {
+    border: none;
+    height: 30px;
+    width: 100%; 
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background: white;
+    box-shadow: 0px 10px 5px -12px black; 
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+div.NewEmployeeComponent small {
+    font-weight: 100;
+}
+
+div.NewEmployeeComponent div.SubmitButton {
+    font-weight: 100;
+}
+

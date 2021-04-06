@@ -1,0 +1,223 @@
+div.SelectedEmployeeComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 5%;
+    -webkit-animation: slit-in-vertical 0.45s ease-out both;
+	        animation: slit-in-vertical 0.45s ease-out both;
+}
+ 
+div.SelectedEmployeeComponent h3{ 
+    margin: 0;
+    position: relative;
+    top: 5px;
+    
+    background-color: var(--white-0);
+    padding: 5px 20px 0px 20px;
+    border: 1px solid var(--white-8);
+    border-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+div.SelectedEmployeeComponent div.EmployeeCard{
+    background-color: var(--white-0);
+    border: 1px solid var(--white-8);
+    border-radius: 0px 0px 150px 0px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 15px 10px 37px 10px rgba(0,0,0,0.3); 
+    box-shadow: 0px 10px 13px -7px #000000, 15px 10px 37px 10px rgba(0,0,0,0.3);
+    padding: 2%;
+    width: 90%;
+}
+div.SelectedEmployeeComponent form, table {
+    width: 100%;
+    
+}
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 0.1fr;
+  grid-template-rows: 0.1fr 2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . close"
+    "form img .";
+}
+.closeTab { grid-area: close; }
+.form { grid-area: form; }
+.img { grid-area: img; }
+
+
+div.SelectedEmployeeComponent input{
+    color:black;
+    margin-top: 5px;
+}
+
+
+
+div.SelectedEmployeeComponent button {
+    height: 30px;
+    appearance: none;
+    background-color:var(--white-0);
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+div.SelectedEmployeeComponent button:hover {
+    background-color:var(--white-1);
+}
+
+div.SelectedEmployeeComponent button[disabled]{
+    visibility: hidden;
+    display: none;
+}
+div.SelectedEmployeeComponent button {
+    appearance:none;
+    font-weight:600;
+    background-color:var(--white-0);
+}
+
+div.SelectedEmployeeComponent button[type="submit"]{
+    background-color:var(--blue-6);
+    border-color: var(--blue-7);
+    color:#fff;   
+} 
+
+div.SelectedEmployeeComponent button[type="submit"]:hover {
+    background-color:var(--blue-5);
+}
+
+div.SelectedEmployeeComponent button[type="reset"] {
+    appearance:none;
+    background-color:var(--red-2);
+    border-color: var(--red-3);
+    color:#fff;
+    font-weight:600;
+}
+div.SelectedEmployeeComponent button[type="reset"]:hover {
+    background-color:var(--red-1);
+}
+
+div.SelectedEmployeeComponent button.remove {
+    background-color:var(--white-8);
+    border-color: var(--white-8);
+    color:#fff;     
+}
+div.SelectedEmployeeComponent button.remove:hover {
+    background-color:var(--white-7);
+}
+
+div.SelectedEmployeeComponent button.closeTab {  
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin: 0;
+    border: solid 1px var(--white-3);
+    
+    padding: 0;
+    font-weight: 400;
+}
+
+div.SelectedEmployeeComponent input:enabled{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+div.SelectedEmployeeComponent input:enabled:hover {
+    border: solid 1px var(--white-4);
+}
+div.SelectedEmployeeComponent input:enabled:focus {
+    border: solid 1px var(--white-5);
+}
+
+div.SelectedEmployeeComponent input {
+    text-align: center;
+    box-shadow: 0px 10px 5px -12px black;
+    
+    border: 0;
+    outline: 0;
+    background: transparent;
+    
+    height:30px;   
+    width: 80%;
+}
+
+
+div.SelectedEmployeeComponent select {
+    border: none;
+    height: 30px;
+    width: 80%; 
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background: white;
+    box-shadow: 0px 10px 5px -12px black; 
+    
+    border-radius: 5px;
+}
+div.SelectedEmployeeComponent select:hover{
+    border: solid 1px var(--white-8);
+}
+div.SelectedEmployeeComponent select[disabled] {
+    background-color: transparent;
+    color: black;
+    
+}
+
+div.SelectedEmployeeComponent .photo {
+    width: 125px;
+    background-color: var(--white-0);
+    border: 1px solid var(--white-8);
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 15px 10px 37px 10px rgba(0,0,0,0.3); 
+    box-shadow: 0px 10px 13px -7px #000000, 15px 10px 37px 10px rgba(0,0,0,0.3);
+    padding: 5%;
+    
+}
+
+input[type="file"] {
+    display: none;
+}
+div.uploadImageComponent label[disabled] {
+    display: none;
+}
+.custom-file-upload {
+    margin-top: 5px;
+    width: 125px;
+    background-color: var(--white-1);
+    border: 1px solid var(--white-8);
+    border-radius: 5px 5px 5px 5px;
+    display: inline-block;
+    padding: 1%;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+}
+.custom-file-upload:hover {
+    background-color: var(--white-2); 
+}
+
+div.uploadImageComponent input[disabled] {
+    display: none;
+}
+
+div.uploadImageComponent button {
+    width: 125px;
+    height: auto;
+    background-color: var(--blue-6);
+    color: var(--white-0);
+    border: 1px solid var(--blue-7);
+}
+div.uploadImageComponent button:hover {
+    
+    background-color: var(--blue-5);
+    color: var(--white-0);
+    border: 1px solid var(--blue-6);
+}
+div.uploadImageComponent button[disabled] {
+    display: none;
+}

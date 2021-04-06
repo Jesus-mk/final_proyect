@@ -1,0 +1,141 @@
+div.NavBarComponent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 10%;
+    position: sticky;
+    top: 0px;
+    
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0px 10px 5px -10px black;
+    
+}
+div.NavBarComponent div.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    gap: 10px;
+}
+div.NavBarComponent div.logo {
+    content:url(./Images/logo.png);
+    height: 40px;
+    width: 40px;
+}
+  div.NavBarComponent div.metacontratas {
+    content:url(./Images/nombre.png);
+    height: 35px;
+    width: 200px;
+}
+div.NavBarComponent ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-right: 5%;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    max-width: 30%;
+    min-width: 20%;
+    
+}
+
+div.NavBarComponent ul a.NavLink {
+    margin-right: 15px;
+    text-decoration: none
+}
+
+div.NavBarComponent ul a.NavLink:hover {
+    color: #3f51b5;
+    border-bottom: solid 1px #3f51b5;
+}
+
+div.NavBarComponent div.imageLinks {
+    width: 50%;
+    gap: 15px;
+}
+
+@keyframes swing-in-top-fwd {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+div.NavBarComponent div.functionCardComponent {
+    
+    border: 1px solid rgb(112, 153, 153, 0.8);
+    border-radius: 10px;
+    padding: 5px;
+    
+    -webkit-box-shadow: -5px 5px 6px 0px rgba(0,0,0,0.3); 
+    box-shadow: -5px 5px 6px 0px rgba(0,0,0,0.3);
+    animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both;
+}
+
+div.NavBarComponent div.functionCardComponent h3 {
+    display: none;
+}
+
+
+div.NavBarComponent div.functionCardComponent[color=green]:hover  {
+    background-color: rgba(182, 255, 219, 0.7);
+    transform: scale(1.1);
+    
+}
+
+div.NavBarComponent div.functionCardComponent[color=green]  {
+    background-color: rgba(182, 255, 219, 0.5);
+    transition: transform .1s;
+}
+
+div.NavBarComponent div.functionCardComponent[color=green] div.UserCardLogo {
+    content:url(./Images/users.webp);
+    height: 50px;
+    width: 50px;
+}
+
+div.NavBarComponent div.functionCardComponent[color=blue]  {
+    background-color: rgba(182, 234, 255, 0.5);
+    transition: transform .1s;
+    
+}
+
+div.NavBarComponent div.functionCardComponent[color=blue]:hover  {
+    background-color: rgba(182, 234, 255, 0.7);
+    transform: scale(1.1);
+}
+
+div.NavBarComponent div.functionCardComponent[color=blue] div.UserCardLogo {
+    content:url(./Images/office_building.png);
+    height: 50px;
+    width: 50px;
+}
+
+div.NavBarComponent div.functionCardComponent[color=yellow]  {
+    background-color: rgba(248, 255, 182, 0.5);
+    transition: transform .1s;
+    
+}
+
+div.NavBarComponent div.functionCardComponent[color=yellow]:hover  {
+    background-color: rgba(248, 255, 182, 0.7);
+    transform: scale(1.1);
+}
+ 
+div.NavBarComponent div.functionCardComponent[color=yellow] div.UserCardLogo {
+    content:url(./Images/clipart696050.png);
+    height: 50px;
+    width: 50px;
+}

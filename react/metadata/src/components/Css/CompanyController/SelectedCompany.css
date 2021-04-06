@@ -1,0 +1,138 @@
+div.SelectedCompanyComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 5%;
+    -webkit-animation: slit-in-vertical 0.45s ease-out both;
+	        animation: slit-in-vertical 0.45s ease-out both;
+}
+ 
+div.SelectedCompanyComponent h3{ 
+    margin: 0;
+    position: relative;
+    top: 5px;
+    
+    background-color: var(--white-0);
+    padding: 5px 20px 0px 20px;
+    border: 1px solid var(--white-8);
+    border-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+div.SelectedCompanyComponent div.ProfileCard{
+    background-color: var(--white-0);
+    border: 1px solid var(--white-8);
+    border-radius: 0px 0px 15px 15px;
+    -webkit-box-shadow: 5px 0px 15px 5px rgba(0,0,0,0.3); 
+    box-shadow: 5px 0px 15px 0px rgba(0,0,0,0.3);
+    padding: 2%;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    width: 90%;
+}
+div.SelectedCompanyComponent form, table {
+    width: 100%;
+    
+}
+
+
+div.SelectedCompanyComponent input{
+    color:black;
+}
+ 
+div.SelectedCompanyComponent button {
+    height: 30px;
+    appearance: none;
+    background-color:var(--white-0);
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+div.SelectedCompanyComponent button:hover {
+    background-color:var(--white-1);
+}
+
+div.SelectedCompanyComponent button[disabled]{
+    visibility: hidden;
+    display: none;
+}
+
+div.SelectedCompanyComponent button {
+    appearance:none;
+    font-weight:600;
+    background-color:var(--white-0);
+}
+
+div.SelectedCompanyComponent button[type="submit"]{
+    background-color:var(--blue-6);
+    border-color: var(--blue-7);
+    color:#fff;   
+}
+
+div.SelectedCompanyComponent button[type="submit"]:hover {
+    background-color:var(--blue-5);
+}
+
+div.SelectedCompanyComponent button[type="reset"] {
+    appearance:none;
+    background-color:var(--red-2);
+    border-color: var(--red-3);
+    color:#fff;
+    font-weight:600;
+}
+div.SelectedCompanyComponent button[type="reset"]:hover {
+    background-color:var(--red-1);
+}
+
+div.SelectedCompanyComponent button.remove {
+    background-color:var(--white-8);
+    border-color: var(--white-9);
+    color:#fff;    
+}
+div.SelectedCompanyComponent button.remove:hover {
+    background-color:var(--white-7);
+}
+div.SelectedCompanyComponent button.Administrate{
+    width: 50%;
+    background-color:var(--blue-2);
+}
+
+div.SelectedCompanyComponent input:enabled{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+div.SelectedCompanyComponent input:enabled:hover {
+    border: solid 1px var(--white-8);
+}
+div.SelectedCompanyComponent input:enabled:focus {
+    border: solid 1px var(--white-8);
+}
+
+div.SelectedCompanyComponent input {
+    text-align: center;
+    box-shadow: 0px 10px 5px -12px black;
+    
+    border: 0;
+    outline: 0;
+    background: transparent;
+    
+    height:30px;   
+    width: 80%;
+}
+
+div.SelectedCompanyComponent button.closeTab {  
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin: 0;
+    border: solid 1px var(--white-3);
+    
+    padding: 0;
+    font-weight: 400;
+}

@@ -1,0 +1,23 @@
+tr.CompanyListComponent {
+    text-align: center;
+    height: 35px;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
+}
+
+tr.CompanyListComponent:nth-child(odd) {
+    background-color: var(--blue-1);
+}
+tr.CompanyListComponent:nth-child(even) {
+    background-color: var(--blue-2);
+}
+
+tr.CompanyListComponent:hover {
+    /* background-color: rgb(116, 198, 157); */
+    border: solid 1px var(--blue-8);
+}
+
+tr.CompanyListComponent td:hover {
+    background-color: var(--blue-5);
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,132 @@
+div.NewCompanyComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 5%;
+    -webkit-animation: slit-in-vertical 0.45s ease-out both;
+	        animation: slit-in-vertical 0.45s ease-out both;
+}
+
+div.NewCompanyComponent h3{ 
+    margin: 0;
+    position: relative;
+    top: 5px;
+    
+    background-color: var(--white-0);
+    padding: 5px 20px 0px 20px;
+    border: 1px solid var(--white-8);
+    border-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+div.NewCompanyComponent p {
+    margin: 0;
+}
+
+div.NewCompanyComponent div.ProfileCard{
+    background-color: var(--white-0);
+    border: 1px solid var(--white-8);
+    border-radius: 0px 0px 15px 15px;
+    -webkit-box-shadow: 5px 0px 15px 5px rgba(0,0,0,0.3); 
+    box-shadow: 5px 0px 15px 0px rgba(0,0,0,0.3);
+    padding: 2%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    width: 90%;
+}
+div.NewCompanyComponent form, table {
+    width: 100%;
+}
+
+div.NewCompanyComponent table.companyTable {
+    margin-top: 5%;
+}
+
+
+div.NewCompanyComponent button {
+    height: 30px;
+    appearance: none;
+    background-color:var(--white-0);
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    min-width: 30%;
+}
+
+div.NewCompanyComponent button:hover {
+    background-color:var(--white-1);
+}
+
+div.NewCompanyComponent button[disabled]{
+    visibility: hidden;
+    display: none;
+}
+div.NewCompanyComponent button {
+    appearance:none;
+    font-weight:600;
+    background-color:var(--white-0);
+    width: auto;
+}
+
+div.NewCompanyComponent button[type="submit"]{
+    background-color:var(--blue-6);
+    border-color: var(--blue-7);
+    color:#fff;   
+}
+
+div.NewCompanyComponent button[type="submit"]:hover {
+    background-color:var(--blue-5);
+}
+
+div.NewCompanyComponent input.inputText {
+    text-align: center;
+    box-shadow: 0px 10px 5px -12px black;
+    
+    border: 0;
+    outline: 0;
+    background: transparent;
+    
+    height:30px;   
+    width: 100%;
+    margin-top: 5px;
+}
+
+div.NewCompanyComponent input.inputText:enabled{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+div.NewCompanyComponent input.inputText:enabled:hover {
+    border: solid 1px var(--white-3);
+}
+div.NewCompanyComponent input.inputText:enabled:focus {
+    border: solid 1px var(--white-4);
+}
+
+
+div.NewCompanyComponent select {
+    border: none;
+    height: 30px;
+    width: 100%; 
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background: white;
+    box-shadow: 0px 10px 5px -12px black; 
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+div.NewCompanyComponent small {
+    font-weight: 100;
+}
+
+div.NewCompanyComponent div.SubmitButton {
+    font-weight: 100;
+}

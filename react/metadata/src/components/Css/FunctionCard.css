@@ -1,0 +1,84 @@
+
+
+div.functionCardComponent  {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(112, 153, 153, 0.8);
+    border-radius: 10px;
+    
+    padding-top: 5%;
+    -webkit-box-shadow: -10px 5px 6px 0px rgba(0,0,0,0.3); 
+    box-shadow: -10px 5px 6px 0px rgba(0,0,0,0.3);
+    
+}
+
+div.functionCardComponent[color=green]:hover  {
+    background-color: rgba(182, 255, 219, 0.7);
+    
+    transform: scale(1.1);
+    
+}
+
+div.functionCardComponent[color=green]  {
+    background-color: rgba(182, 255, 219, 0.5);
+    
+    transition: transform .1s;
+    animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both;
+}
+
+div.functionCardComponent[color=green] div.UserCardLogo {
+    content:url(./Images/users.webp);
+    height: 200px;
+    width: 200px;
+}
+
+div.functionCardComponent[color=blue]  {
+    background-color: rgba(182, 234, 255, 0.5);
+    transition: transform .1s;
+    animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.75s both;
+    
+}
+
+div.functionCardComponent[color=blue]:hover  {
+    background-color: rgba(182, 234, 255, 0.7);
+    transform: scale(1.1);
+}
+
+div.functionCardComponent[color=blue] div.UserCardLogo {
+    content:url(./Images/office_building.png);
+    height: 200px;
+    width: 200px;
+    
+}
+
+div.functionCardComponent[color=yellow]  {
+    background-color: rgba(248, 255, 182, 0.5);
+    transition: transform .1s;
+    animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.0s both;
+    
+}
+
+
+div.functionCardComponent[color=yellow]:hover  {
+    background-color: rgba(248, 255, 182, 0.7);
+    
+    transform: scale(1.1);
+}
+ 
+div.functionCardComponent[color=yellow] div.UserCardLogo {
+    content:url(./Images/clipart696050.png);
+    height: 200px;
+    width: 200px;
+}
+
+@keyframes swing-in-top-fwd {
+    0% {
+        -webkit-transform: translateY(-50px);
+                transform: translateY(-50px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+      }
+    }

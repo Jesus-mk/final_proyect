@@ -1,0 +1,156 @@
+@keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+div.NewUserComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 5%;
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+
+div.NewUserComponent h3{ 
+    margin: 0;
+    position: relative;
+    top: 5px;
+    
+    background-color: var(--white-0);
+    padding: 5px 20px 0px 20px;
+    border: 1px solid var(--white-8);
+    border-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+div.NewUserComponent p {
+    margin: 0;
+}
+
+div.NewUserComponent div.ProfileCard{
+    background-color: var(--white-0);
+    border: 1px solid var(--white-8);
+    border-radius: 0px 0px 15px 15px;
+    -webkit-box-shadow: 5px 0px 15px 5px rgba(0,0,0,0.3); 
+    box-shadow: 5px 0px 15px 0px rgba(0,0,0,0.3);
+    padding: 2%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    width: 90%;
+}
+div.NewUserComponent form, table {
+    width: 100%;
+}
+
+div.NewUserComponent table.companyTable {
+    margin-top: 5%;
+}
+div.NewUserComponent table.companyTable[disabled] {
+    display: none; 
+}
+
+div.NewUserComponent button {
+    height: 30px;
+    appearance: none;
+    background-color:var(--white-0);
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+div.NewUserComponent button:hover {
+    background-color:var(--white-1);
+}
+
+div.NewUserComponent button[disabled]{
+    visibility: hidden;
+    display: none;
+}
+div.NewUserComponent button {
+    appearance:none;
+    font-weight:600;
+    background-color:var(--white-0);
+}
+
+div.NewUserComponent button[type="submit"]{
+    background-color:var(--green-6);
+    border-color: var(--green-7);
+    color:#fff;   
+    width: auto;
+}
+
+div.NewUserComponent button[type="submit"]:hover {
+    background-color:var(--green-5);
+}
+
+div.NewUserComponent input.inputText {
+    text-align: center;
+    box-shadow: 0px 10px 5px -12px black;
+    
+    border: 0;
+    outline: 0;
+    background: transparent;
+    
+    height:30px;   
+    width: 100%;
+    margin-top: 5px;
+}
+
+div.NewUserComponent input.inputText:enabled{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+div.NewUserComponent input.inputText:enabled:hover {
+    border: solid 1px var(--white-3);
+}
+div.NewUserComponent input.inputText:enabled:focus {
+    border: solid 1px var(--white-4);
+}
+
+
+div.NewUserComponent select {
+    border: none;
+    height: 30px;
+    width: 100%; 
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background: white;
+    box-shadow: 0px 10px 5px -12px black; 
+    border-radius: 5px;
+    margin-top: 5px;
+}
+div.NewUserComponent select:hover{
+    border: solid 1px var(--white-3);
+}
+div.NewUserComponent select[disabled] {
+    background-color: transparent;
+    color: black;
+    
+}
+
+div.NewUserComponent input.companyCheck {
+    margin: 0;
+    margin-top: 5%;
+}
+div.NewUserComponent small {
+    font-weight: 100;
+}
+
+div.NewUserComponent div.SubmitButton {
+    font-weight: 100;
+}

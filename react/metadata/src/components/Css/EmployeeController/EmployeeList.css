@@ -1,0 +1,35 @@
+tr.EmployeeListComponent {
+    text-align: center;
+    height: 35px;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
+}
+
+tr.EmployeeListComponent:nth-child(odd) {
+    background-color: var(--white-1);
+}
+tr.EmployeeListComponent:nth-child(even) {
+    background-color: var(--white-2);
+}
+
+tr.EmployeeListComponent:hover {
+    /* background-color: rgb(116, 198, 157); */
+    border: solid 1px black;
+}
+
+tr.EmployeeListComponent td:hover {
+    background-color: var(--white-5);
+    color: white;
+    cursor: pointer;
+}
+
+
+[icon=V-icon] {
+    background-image: url(../Images/ok-35.png);
+    height: 35px;
+    width: 35px;
+}
+[icon=X-icon] {
+    background-image: url(../Images/x-mark-3-35.png);
+    height: 35px;
+    width: 35px;
+}

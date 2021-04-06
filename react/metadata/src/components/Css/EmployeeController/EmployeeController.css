@@ -1,0 +1,137 @@
+div.employeeDivCard[disabled] {
+    display: none
+}
+div.EmployeeController {
+    height: 100%;
+    width: 100%;
+    display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "NewUser TableDiv employeeDivCard";
+}
+ 
+.TableDiv { grid-area: TableDiv; }
+.employeeDivCard { grid-area: TableDiv; }
+.NewUser { grid-area: NewUser; }
+
+div.EmployeeController div.TableDiv {
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.3); 
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+    background-color: var(--white-0);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 70%;
+    
+    margin-top: 2%;
+    justify-content: space-between
+    
+    
+    
+}
+div.EmployeeController table {
+    border-collapse: collapse; 
+    background-color: transparent;
+    overflow: hidden;
+    
+}
+
+div.EmployeeController table thead{
+    background-color: var(--yellow-6);
+    color: white;
+    text-align: center;
+    height: 40px;
+    padding: 10px;
+  
+}
+div.EmployeeController table th{
+    min-width: 60px;
+    margin-top: 2px;
+}
+div.EmployeeController table tr.SearchInputs td{
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div.EmployeeController table tr.SearchInputs {
+    text-align: center;
+}
+
+div.EmployeeController table tr.SearchInputs input{
+    border: none;
+    height: 30px;
+    width: 100%; 
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background: white;
+    box-shadow: 0px 10px 5px -12px black; 
+    
+}
+div.EmployeeController table tr.SearchInputs select{
+    border: none;
+    height: 30px;
+    width: 150px; 
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background: white;
+    box-shadow: 0px 10px 5px -12px black;  
+}
+
+div.pagination {
+    justify-self: flex-end;
+    width: 30%;
+}
+
+div.EmployeeController p.pageBox {
+    margin: 0;
+    padding: 6px;
+    border-top: solid 2px var(--white-7);
+    border-bottom: solid 2px var(--white-7);
+    background: var(--yellow-2);
+}
+
+div.EmployeeController div.paginationDiv {
+    margin-bottom: 10px;
+    width: 100%;
+}
+div.EmployeeController div.TableDiv button {
+    background-color: var(--yellow-5);
+    color: white;
+    cursor: pointer;
+    height: 35px;
+    width: 100px;
+    font-weight: 600;
+    border: 1px solid var(--white-7);
+    border-radius: 5px 5px 5px 5px;
+    
+}
+div.EmployeeController div.TableDiv button:hover:enabled {
+    background-color: var(--yellow-3);
+}
+div.EmployeeController div.TableDiv button.backPage {
+    border: 2px solid var(--white-7);
+    border-radius: 5px 0px 0px 5px;
+}
+
+div.EmployeeController div.TableDiv button.nextPage {
+    border: 2px solid var(--white-7);
+    border-radius: 0px 5px 5px 0px;
+}
+
+div.EmployeeController div.TableDiv button[disabled] {
+    color: var(--yellow-5);
+    background-color:var(--yellow-6);
+    cursor:not-allowed;
+} 
+
+
+  
+ 

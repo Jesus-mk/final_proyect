@@ -1,0 +1,259 @@
+*:focus {outline:none !important}
+* {box-sizing: border-box;}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+div#root {
+  height: 100%;
+}
+
+.flex-colum {
+  display: flex;
+    flex-direction: column ;
+    flex-wrap: nowrap ;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: nowrap ;
+    align-items: center;
+    justify-content: center;
+}
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* Colors */
+.white-background{ background-color: white;}
+.lighGray-background{ background-color: rgb(250, 250, 250);}
+.blue-background{ background-color: #3F51B5;}
+:root {
+  --white-0: rgba(248, 249, 250, 1);
+  --white-1: rgba(233, 236, 239, 1);
+  --white-2: rgba(222, 226, 230, 1);
+  --white-3: rgba(206, 212, 218, 1);
+  --white-4: rgba(173, 181, 189, 1);
+  --white-5: rgba(108, 117, 125, 1);
+  --white-6: rgba(73, 80, 87, 1);
+  --white-7: rgba(52, 58, 64, 1);
+  --white-8: rgba(33, 37, 41, 1);
+
+  --green-0: rgb(216, 243, 220,0.5);
+  --green-1: rgb(216, 243, 220);
+  --green-2: rgb(149, 213, 178);
+  --green-3: rgb(116, 198, 157);
+  --green-4: rgb(82, 183, 136);
+  --green-5: rgb(64, 145, 108);
+  --green-6: rgb(45, 106, 79);
+  --green-7: rgb(23, 61, 44);
+  --green-8: rgb(8, 28, 21);
+
+  --blue-0: rgb(169, 214, 229);
+  --blue-1: rgb(137, 194, 217);
+  --blue-2: rgb(97, 165, 194);
+  --blue-3: rgb(70, 143, 175);
+  --blue-4: rgb(44, 125, 160);
+  --blue-5: rgb(42, 111, 151);
+  --blue-6: rgb(1, 73, 124);
+  --blue-7: rgb(1, 58, 99);
+  --blue-8: rgb(1, 42, 74);
+
+  --yellow-0 : rgba(251, 200, 132);
+  --yellow-1 : rgba(251, 195, 120);
+  --yellow-2 : rgba(251, 189, 106);
+  --yellow-3 : rgba(251, 182, 91);
+  --yellow-4 : rgb(251, 175, 75);
+  --yellow-5 : rgb(251, 175, 75);
+  --yellow-6 : rgb(228, 152, 52);
+  
+
+  --red-0: rgba(224, 30, 55, 1);
+  --red-1: rgba(218, 30, 55, 1);
+  --red-2: rgba(199, 31, 55, 1);
+  --red-3: rgba(189, 31, 54, 1);
+  --red-4: rgba(178, 30, 53, 1);
+  --red-5: rgba(167, 30, 52, 1);
+  --red-6: rgba(161, 29, 51, 1);
+  --red-7: rgba(133, 24, 42, 1);
+  --red-8: rgba(110, 20, 35, 1);
+  --red-9: rgba(100, 18, 32, 1);
+
+  
+   
+}
+
+/* =================== */
+div.LoginComponent  {
+    background-image: url(./components/Css/Images/p-hk-eye-0036.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute; top: 0; left: 0;
+    flex-grow: 0;
+    justify-content:space-around;
+    align-items: center
+}
+
+div.LoginComponent div.Card {
+    margin-top: 10%;
+    padding-top: 50px;
+    
+    width: 315px;
+    height: 420px;
+    
+  
+    border-radius: 15px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 100%, rgba(255,255,255,0) 100%); 
+   
+    justify-content: flex-start;
+    align-items: center
+}
+
+
+/* =========LOGO========== */
+
+div.LoginComponent div.logo {
+  content:url(./components/Css/Images/logo.png);
+  height: 60px;
+  width: 60px;
+  
+}
+div.LoginComponent div.metacontratas {
+  content:url(./components/Css/Images/nombre.png);
+  height: 30px;
+  width: 80%;
+  margin-top: 5%;
+}
+
+
+/* ========FROM======== */
+div.LoginComponent .FormDiv {
+  width: 100%;
+  margin-top: 50px;
+  flex-grow: 1;
+  justify-content: flex-start;
+
+}
+div.LoginComponent form {
+    width: 90%;
+    
+}
+
+div.LoginComponent form {
+  
+  gap: 15px;
+}
+
+div.LoginComponent form input.inputText {
+  text-align: center;
+  align-self: center;
+
+  box-shadow: 0px 10px 5px -12px black;
+  
+  border: 0;
+  outline: 0;
+  background: transparent;
+  
+  height:30px;   
+  width: 80%;
+}
+
+  
+div.LoginComponent input.inputText:hover {
+  background: fixed;
+  background-color: rgba(5, 137, 214, 0.1);
+  border-radius: 5px;
+}
+div.LoginComponent input.inputText:focus {
+  background-color: rgba(5, 137, 214, 0.2);
+  border: 1px solid rgb(112, 153, 153, 0.8);
+  border-radius: 5px;
+  width: 90%;
+}
+div.LoginComponent .disable{
+  visibility: hidden;
+}
+div.LoginComponent div.error {
+  color: #fff;
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(90deg,
+   rgba(255,255,255,0) 0%,
+   rgba(255,255,255,0) 15%,
+   rgba(189,76,73,0.6) 25%,
+   rgba(189,76,73,0.6) 75%,
+   rgba(255,255,255,0) 85%,
+   rgba(255,255,255,0) 100%);
+ 
+  border-radius: 50px;
+  
+}
+div.LoginComponent form p {
+  text-align: center;
+  font-size: 12px;
+  margin: 0;
+}
+
+
+div.LoginComponent form button.btn {
+  appearance:none;
+  
+  background-color:#3F51B5;
+  border:none;
+  color:#fff;
+  font-weight:600;
+  border-radius:5px;
+
+  margin-top: 0%;
+  width:90%;
+  height: 35px;
+}
+
+div.LoginComponent form button.btn:hover {
+  cursor: pointer;
+  background-color:#556adf;
+}
+
+div.LoginComponent button.btn:focus {
+  background-color:#556adf;
+  border: 1px solid rgb(112, 153, 153, 0.8);
+  border-radius: 5px;  
+}
+
+/* ========Links======== */
+
+div.LoginComponent div.Links {
+  width: 100%;
+  display:flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 1%;
+}
+
+div.LoginComponent a {
+  color: rgb(110, 110, 110);
+  text-decoration: none; /* no underline */
+  font-size: 12px;
+}
+
+div.LoginComponent a:hover {
+  color: rgb(0, 0, 0);  
+}
+div.LoginComponent a:focus {
+  color: rgb(0, 0, 0);  
+  border: 1px solid rgb(112, 153, 153, 0.8);
+   
+}

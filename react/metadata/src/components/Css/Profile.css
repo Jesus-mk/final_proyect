@@ -1,0 +1,109 @@
+div.ProfileComponent {
+    background-color: var(--white-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 5%;
+}
+
+div.ProfileComponent h3{ 
+    margin: 0;
+    position: relative;
+    top: 5px;
+    left: -150px;
+    background-color: var(--white-0);
+    padding: 10px 20px 0px 10px;
+    border: 1px solid var(--white-8);
+    border-bottom: 0px;
+    border-radius: 0px 100px 0px 0px;
+}
+
+div.ProfileComponent div.ProfileCard{
+    background-color: var(--white-0);
+    border: 1px solid var(--white-8);
+    border-radius: 0px 0px 150px 0px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 15px 10px 37px 10px rgba(0,0,0,0.3); 
+    box-shadow: 0px 10px 13px -7px #000000, 15px 10px 37px 10px rgba(0,0,0,0.3);
+    padding: 2%;
+    width: 500px;
+}
+div.ProfileComponent form, table {
+    width: 100%;
+}
+
+div.ProfileComponent input{
+    color:black;
+}
+
+div.ProfileComponent button {
+    height: 30px;
+    appearance: none;
+    background-color:var(--white-0);
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+div.ProfileComponent button:hover {
+    background-color:var(--white-1);
+}
+
+div.ProfileComponent button[disabled]{
+    visibility: hidden;
+}
+
+div.ProfileComponent button[type="submit"]{
+    appearance:none;
+    background-color:var(--blue-6);
+    border:none;
+    color:#fff;
+    font-weight:600;
+}
+
+div.ProfileComponent button[type="submit"]:hover {
+    background-color:var(--blue-5);
+}
+
+div.ProfileComponent button.reset {
+    appearance:none;
+    background-color:var(--red-2);
+    border:none;
+    color:#fff;
+    font-weight:600;
+    
+}
+div.ProfileComponent button.reset:hover {
+    background-color:var(--red-1);
+}
+
+div.ProfileComponent input:enabled{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+div.ProfileComponent input:enabled:hover {
+    border: solid 1px var(--white-8);
+}
+div.ProfileComponent input:enabled:focus {
+    border: solid 1px var(--white-8);
+}
+
+div.ProfileComponent input {
+    text-align: center;
+    box-shadow: 0px 10px 5px -12px black;
+    
+    border: 0;
+    outline: 0;
+    background: transparent;
+    
+    height:30px;   
+    width: 80%;
+}
+
+div.ProfileComponent input.prueba[disabled] {
+    background-color: blanchedalmond;
+    display: none;
+}

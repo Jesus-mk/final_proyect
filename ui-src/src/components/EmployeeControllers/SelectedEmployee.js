@@ -273,9 +273,10 @@ return (
           
         </form>
         </div>
-        <div className="img" >
-          <img className="photo" src={url}/>
+        <div className="img">
         
+          <img className="photo" src={url} onerror="if (this.src != 'https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png') this.src = 'https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png';"></img>
+          
           <FileUploadPage id={selectedUser._id} count={count} setCount={setCount} disable={disable} setDisable={setDisable}></FileUploadPage>
         </div>
       </div>

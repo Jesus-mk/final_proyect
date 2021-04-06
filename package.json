@@ -6,6 +6,7 @@
     "scripts": {
         "start": "nodemon server/server.js",
         "build": "rm -rf ui && cd ui-src && npm run build && mv build ../ui",
+        "postinstall": "cd ui-src && npm install",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",

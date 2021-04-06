@@ -9,8 +9,15 @@ router.post("/login", (req, res) => {
     /* This needs to be fixed */
     const body = req.body;
 
+    if (!body.password) {
+        return res.status(400).json({
+            ok: false,
+            error: {
+                message: "Password is empty",
+            }
+        });
+    }
     User.findOne({ email: body.email }, (error, userDB) => {
-
         if (error !== null) {
             return res.status(500).json({
                 ok: false,
@@ -25,11 +32,11 @@ router.post("/login", (req, res) => {
                     message: "Invalid user or password",
                 }
             });
-        } else if (body.password) {
-            
-            if (!bcrypt.compareSync(body.password, userDB.password))
-                
-                return res.status(400).json({
+        }
+
+        if (!bcrypt.compareSync(body.password, userDB.password)) {
+
+            return res.status(400).json({
                 ok: false,
                 error: {
                     message: "Invalid user or password",
@@ -39,9 +46,10 @@ router.post("/login", (req, res) => {
 
 
 
+
         const token = jwt.sign({
-                user: userDB
-            },
+            user: userDB
+        },
             process.env.SEED, { expiresIn: process.env.TOKEN_EXPIY }
         );
 

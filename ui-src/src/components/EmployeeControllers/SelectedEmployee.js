@@ -91,8 +91,8 @@ function SelectedEmployee({selectedUser, setSelectedUser,
   const [Message, setMessage] = useState("");
   const [MessageError, setMessageError] = useState();
   
-  let url;
-  if (selectedUser._id !== undefined) url = `https://hidden-sands-57810.herokuapp.com/employee/image/?id=${selectedUser.profilePicture}`
+  let url = "https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png";
+  if (selectedUser.profilePicture !== undefined) url = `https://hidden-sands-57810.herokuapp.com/employee/image/?id=${selectedUser.profilePicture}`;
   const delay = ms => new Promise(res => setTimeout(res, ms));
  
 return (
@@ -275,7 +275,7 @@ return (
         </div>
         <div className="img">
         
-          <img className="photo" src={url} onerror="if (this.src != 'https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png') this.src = 'https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png';"></img>
+          <img className="photo" src={url}></img>
           
           <FileUploadPage id={selectedUser._id} count={count} setCount={setCount} disable={disable} setDisable={setDisable}></FileUploadPage>
         </div>

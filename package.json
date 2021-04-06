@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "nodemon server/server.js",
-        "build": "cd ../react/metadata/ && npm run build && mv build ../../rest-server/ui",
+        "build": "rm -rf ui && cd ui-src && npm run build && mv build ../ui",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
